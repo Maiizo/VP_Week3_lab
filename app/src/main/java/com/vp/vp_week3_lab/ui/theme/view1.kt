@@ -99,6 +99,8 @@ fun View1() {
             .background(color = bgColor)
     ) {
 
+
+
         if (gameState == GameState.start) {
             Text(
                 text = "Reaction",
@@ -136,6 +138,9 @@ fun View1() {
                 )
             }
         }
+
+
+
 
         if (gameState == GameState.wait) {
             Text(
@@ -180,6 +185,8 @@ fun View1() {
                 )
             }
         }
+
+
 
         if (gameState == GameState.go) {
             Text(
@@ -228,6 +235,9 @@ fun View1() {
                 )
             }
         }
+
+
+
 
         if (gameState == GameState.trial) {
             Text(
@@ -350,6 +360,10 @@ fun View1() {
         }
 
 
+
+
+
+
         if (gameState == GameState.failed) {
             Text(
                 text = "FAIL!",
@@ -439,7 +453,6 @@ fun View1() {
                 }
             }
 
-
             Button(
                 onClick = {
                     if (currentTrial < 3) {
@@ -460,6 +473,8 @@ fun View1() {
                 )
             }
         }
+
+
 
 
         if (gameState == GameState.final) {
@@ -585,7 +600,6 @@ fun View1() {
                                 fontSize = 12.sp
                             )
                         }
-
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(
                                 text = "3",
@@ -601,6 +615,8 @@ fun View1() {
                         }
 
                     }
+
+
                     Text(
                         text = "Average: ${AveTime}ms\n",
                         color = Color(0xFFe49e56),
@@ -612,6 +628,7 @@ fun View1() {
                 }
             }
         }
+
     }
 }
 
